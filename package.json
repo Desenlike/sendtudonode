@@ -1,6 +1,6 @@
 {
   "name": "sendtudonode",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "./src/index.js",
   "repository": "https://github.com/Desenlike/sendtudonode.git",
   "author": "Érick Nilson Souza Sodré Filho <erickmanovei@hotmail.com>",
