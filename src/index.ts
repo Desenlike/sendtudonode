@@ -1,1 +1,0 @@
-import { sendWhatsappMessage } from "./sendWhatsappMessage";

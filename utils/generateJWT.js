@@ -59,4 +59,4 @@ const generateJWT = ({
   return token;
 };
 
-export default generateJWT;
+module.exports = generateJWT;

@@ -1,32 +1,20 @@
-import axios from 'axios';
-import generateJWT from '../utils/generateJWT';
+const axios = require ('axios');
+const generateJWT = require('../utils/generateJWT');
 
-export const sendWhatsappMessage = async ({
+module.exports = sendWhatsappMessage = async ({
     to,
     message = null, 
     templateId = null, 
     customParams = null,
     publicKey,
     privateKey,
-}: {
-    to: string;
-    message?: string | null;
-    templateId?: string | null;
-    customParams?: object | null;
-    publicKey: string;
-    privateKey: string;
 }) => {
     try {
         const token = generateJWT({
             privateKey,
             publicKey,
         });
-        const data: {
-            to: string;
-            message?: string;
-            templateId?: string;
-            customParams?: object;
-        } = {
+        const data = {
             to,
         }
         if (!templateId) {
